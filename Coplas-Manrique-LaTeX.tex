@@ -1,65 +1,19 @@
-\documentclass[11pt,a4paper,twoside]{article}
-\usepackage[noeledsec,noend,noledgroup,nopenalties,series={A,E},parapparatus]{reledmac}
-\usepackage{fontspec}
-\usepackage[paperwidth=17.00cm,paperheight=25.00cm,top=1.40cm,inner=1.95cm,outer=1.65cm,bottom=2.50cm]{geometry}
+\documentclass[11pt,twoside]{article}
 \usepackage{polyglossia}
-\usepackage[breaklinks=true,hidelinks]{hyperref}
-\usepackage{microtype}
-\usepackage{xurl}
+\usepackage{editio-critica}
+\usepackage{fontspec}
+\usepackage[paperwidth=17.50cm,paperheight=25.00cm,top=1.65cm,inner=1.95cm,outer=1.65cm,bottom=2.50cm]{geometry}
 \usepackage{tikz}
-\usepackage[style=nncph,backend=biber,url=true]{biblatex}
-\addbibresource{bibliography.bib}
 %
 \title{\huge\textbf{COPLAS SOBRE LA MUERTE DE SU PADRE}}
 \author{\huge\textsc{\textbf{Jorge Manrique}}}
-\date{\vspace{60pt}\textsc{Edición crítica liminar}\\\fontsize{40}{11}\selectfont{\vfill\LaTeX}}
+\date{\vspace{60pt}\textsc{Edición crítica liminar}\\\fontsize{40}{11}\selectfont{\vfill\textbf{\LaTeX}}}
 %
 \setmainfont{TemporaNR}[RawFeature=lnum]
 \setdefaultlanguage{spanish}
 \setotherlanguage[variant=ancient]{greek}
 %
-\setlength{\parindent}{0.6cm}
-\setlength{\bibhang}{0.6cm}
-\sloppy	
-%
 \usetikzlibrary{trees}
-%
-\fnpos{critical-familiar}
-\fnpos{{A}{familiar},{A}{critical},{E}{familiar}}
-\Xarrangement{paragraph}
-\arrangementX[A]{paragraph}
-\AtBeginDocument{\Xmaxhnotes{0.66\textheight}\maxhnotesX{1\textheight}}
-\Xinplaceoflemmaseparator{0em}
-\Xnumberonlyfirstinline
-\Xnumberonlyfirstintwolines
-\parindentX[E]
-\Xnotenumfont{\bfseries}
-\Xsymlinenum{\char"02016}
-\Xbeforesymlinenum{-0.6em}
-\Xafterlemmaseparator{0.4em}
-\Xbeforelemmaseparator{-0.1em}
-\Xafternumber{0.4em}
-\linenummargin{outer}
-%
-\prenotesX{11pt}
-\afterruleX{2pt}
-\Xprenotes{11pt}
-\Xafterrule{2pt}
-%
-\newcommand{\comillas}[1]{«#1»}
-\renewcommand{\thefootnoteA}{}
-%
-\usepackage{tocloft}
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cfttoctitlefont}{\bfseries\scshape}
-%
-%Para que se cite correctamente el shortauthor.  
-\makeatletter
-\AtEveryCitekey{\ifnameundef{shortauthor}{}{\def\cbx@apa@ifnamesaved{\@firstoftwo}}}
-\makeatother
-%Espaciado de la lista.
-\usepackage{enumitem}
-\setlist{nosep,noitemsep,parsep=0pt}
 %
 %CONSPECTVS SIGLORVM
 \newcommand{\eg}{{\emph{\textbf{LB3}}}}
@@ -764,8 +718,8 @@ No dexó grandes thesoros\\
 ni \edtext{alcançó}{\lemma{alcanço}\Afootnote{llego {\hh}}} \edtext{gra\emph{n}des}{\Afootnote{muchas {\rl}}} riq\emph{ue}zas\\ 
 ni baxillas,\\
 mas fizo \edtext{guerras a moros}{\Afootnote{guerra a los moros {\delt}, {\mn}, {\im}; gran guerra a moros {\hh}}}\footnoteE{Se siguen las lecciones plurales de {\eg}, porque don Rodrigo Manrique probablemente no participó en una guerra, sino en otras más. Es necesario atender a los datos proporcionados por Fernando del Pulgar en su \emph{Claros varones de Castilla} (ca. 1480-1486) que, en un capítulo dedicado al maestre, el XIII, titulado «El Maestre Don Rodrigo Manrrique, Conde de Paredes» --que ya citó \textcite[cap. IX]{MenendezYPelayo1944}--, los recoge con gran detalle. A continuación, el pasaje según la edición crítica de Tate:\par
-«\emph{En las batallas ⁊ muchos recuentros que ovo con moros ⁊ con christianos este cavallero fue el que, mostrando grand esfuerço a los suyo, fería primero en los contrarios. E las gentes de su conpañía, visto el efuerço de su capitán, todos le seguían ⁊ cobravan osadía de pelear. Tenía tan grand conoscimiento de las cosas del canpo, ⁊ proveí[a]las en tal manera que donde él fue principal capitán nunca puso su gente en logar do se oviese de retraer, porque bolver las espaldas al enemigo era tan ageno que su ánimo que elegía antes de recebir la muerte peleando que salvar la vida huyendo.}\par 
-»\emph{Este cavallero osó acometer grandes fazañas. Especialmente escaló una noche la cibdad de Huesca, que es del reino de Granada. E como quier que subiendo el escala los suyos fueron sentidos de los moros, ⁊ fueron algunos derribados del adarve ⁊ feridos en la subida} [...] \emph{subieron el muro peleando ⁊ no fallescieron de sus fuerças defendiéndolo, aunque veían los unos derramar su sangre, los otros caer de la cerca. E de esta manera, matando de los moros ⁊ muriendo de los suyos, este capitán, ferido en el braço de una saeta, peleando entró la cibdad e retroxo los moros fasta que los cercó en la fortaleza.} [...] \emph{Este cavallero duró ⁊ fizo durar a los suyos conbatiendo los moros que tenía cercados, e resistiendo a los moros que le tenía cercado por espacio de dos días, fasta que vino el socorro }[...] \emph{Ganada aquella cibdad, dexado en ella por capitán a un su hermano llamado Gómes Manrrique, ganó otras fortalezas en la comarca. Socorrió muchas vezes algunas cibdades ⁊ villa ⁊ capitanes christianos en tienpo de estrema necesidad. ⁊ fizo tanta guerra en aquellas tierras que en el reino de Granada el nonbre de Rodrigo Ma[n]rrique fue mucho tienpo a los moros grand terror.}»}\\
+«En las batallas ⁊ muchos recuentros que ovo con moros ⁊ con christianos este cavallero fue el que, mostrando grand esfuerço a los suyo, fería primero en los contrarios. E las gentes de su conpañía, visto el efuerço de su capitán, todos le seguían ⁊ cobravan osadía de pelear. Tenía tan grand conoscimiento de las cosas del canpo, ⁊ proveí[a]las en tal manera que donde él fue principal capitán nunca puso su gente en logar do se oviese de retraer, porque bolver las espaldas al enemigo era tan ageno que su ánimo que elegía antes de recebir la muerte peleando que salvar la vida huyendo.\par 
+»Este cavallero osó acometer grandes fazañas. Especialmente escaló una noche la cibdad de Huesca, que es del reino de Granada. E como quier que subiendo el escala los suyos fueron sentidos de los moros, ⁊ fueron algunos derribados del adarve ⁊ feridos en la subida [...] subieron el muro peleando ⁊ no fallescieron de sus fuerças defendiéndolo, aunque veían los unos derramar su sangre, los otros caer de la cerca. E de esta manera, matando de los moros ⁊ muriendo de los suyos, este capitán, ferido en el braço de una saeta, peleando entró la cibdad e retroxo los moros fasta que los cercó en la fortaleza. [...] Este cavallero duró ⁊ fizo durar a los suyos conbatiendo los moros que tenía cercados, e resistiendo a los moros que le tenía cercado por espacio de dos días, fasta que vino el socorro [...] Ganada aquella cibdad, dexado en ella por capitán a un su hermano llamado Gómes Manrrique, ganó otras fortalezas en la comarca. Socorrió muchas vezes algunas cibdades ⁊ villa ⁊ capitanes christianos en tienpo de estrema necesidad. ⁊ fizo tanta guerra en aquellas tierras que en el reino de Granada el nonbre de Rodrigo Ma[n]rrique fue mucho tienpo a los moros grand terror.»}\\
 gana\emph{n}do sus fortalezas \edtext{}{\Afootnote[nosep]{fortalezas [y villas] \emph{eras.} {\eg}}}\\
 y sus villas;\par
 y en las lides que vençió,\\
