@@ -1,9 +1,8 @@
 \documentclass[11pt,twoside]{article}
+\usepackage{fontspec}
+\usepackage[paperwidth=17.00cm,paperheight=25.00cm,top=1.40cm,inner=1.95cm,outer=1.65cm,bottom=2.50cm]{geometry}
 \usepackage{polyglossia}
 \usepackage{editio-critica}
-\usepackage{fontspec}
-\usepackage[paperwidth=17.50cm,paperheight=25.00cm,top=1.65cm,inner=1.95cm,outer=1.65cm,bottom=2.50cm]{geometry}
-\usepackage{tikz}
 %
 \title{\huge\textbf{COPLAS SOBRE LA MUERTE DE SU PADRE}}
 \author{\huge\textsc{\textbf{Jorge Manrique}}}
@@ -13,8 +12,11 @@
 \setdefaultlanguage{spanish}
 \setotherlanguage[variant=ancient]{greek}
 %
+
+\usepackage{tikz}
 \usetikzlibrary{trees}
 %
+\Xlemmaseparator{:}
 %CONSPECTVS SIGLORVM
 \newcommand{\eg}{{\emph{\textbf{LB3}}}}
 \newcommand{\jm}{\emph{\textbf{82*JM}}}
@@ -70,11 +72,11 @@ Manuscrito en papel con marcas de agua de fines de los 1470 o inicios de los 148
 %
 {\jm} = \emph{Vita Christi por fray Íñigo de Mendoza} (RBME, 100-II-17).
 %
-Impresión incunable; tipografía gótica a doble columna; ca. 1480-1484, Zaragosa?; 52 fols.; los ff. 41r-44v contienen las coplas con la rúbrica \comillas{Dezir de don jorge manrriq\emph{ue} por la muerte de su padre}; hay dos ejemplares y se hallan: uno, en la Real Biblioteca del Monasterio de San Lorenzo de El Escorial (100-II-17), y el otro, en la Biblioteca Comunale de Palermo (Esp-XI, F. 56, núm. 3); plausible \emph{editio princeps}. <\url{https://rbme.patrimonionacional.es/s/rbme/item/14443#?xywh=-1601%2C-39%2C4854%2C2165}>.\par
+Impresión incunable; tipografía gótica a doble columna; ca. 1480-1484, Zaragosa?; 52 fols.; los ff. 41r-44v contienen las coplas con la rúbrica \comillas{Dezir de don jorge manrriq\emph{ue} por la muerte de su padre}; hay dos ejemplares y se hallan: uno, en la Real Biblioteca del Monasterio de San Lorenzo de El Escorial (100-II-17), y el otro, en la Biblioteca Comunale de Palermo (Esp-XI, F. 56, núm. 3); plausible \emph{editio princeps}. <\url{https://rbme.patrimonionacional.es/s/rbme/item/14443#?xywh=-1601\%2C-39\%2C4854\%2C2165}>.\par
 %
 {\rl} = \emph{Cancionero de Ramón de Llavia} (BNE, INC/2567).
 %
-Impresión a doble columna; tipografía gótica; Zaragoza, Pablo Hurus, ca. 1488-1490?; 98 fols.; los ff. 73r-76r contienen las coplas con la rúbrica \comillas{De don jorge manrrique por la muerte de su padre}; dos ejemplares en la Biblioteca Nacional de España con las siglas INC/2567 y INC/2892; dedicado a doña Francisquina de Bardací, según el prólogo \comillas{fecho a la señora doña francisqujna de bardaçi mujer del magnifico señor mofsen(?) joan fernandez de heredia gouernador de arago\emph{n} por ramon dellabia en q\emph{ue} le endereça el presente libro}. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000108057&page=1}>.\par
+Impresión a doble columna; tipografía gótica; Zaragoza, Pablo Hurus, ca. 1488-1490?; 98 fols.; los ff. 73r-76r contienen las coplas con la rúbrica \comillas{De don jorge manrrique por la muerte de su padre}; dos ejemplares en la Biblioteca Nacional de España con las siglas INC/2567 y INC/2892; dedicado a doña Francisquina de Bardací, según el prólogo \comillas{fecho a la señora doña francisqujna de bardaçi mujer del magnifico señor mofsen(?) joan fernandez de heredia gouernador de arago\emph{n} por ramon dellabia en q\emph{ue} le endereça el presente libro}. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000108057\&page=1}>.\par
 %
 {\hh} = \emph{Cancionero de Oñate-Castañeda} (Harvard Houghton Library, MS. Span. 97).
 %
@@ -82,11 +84,11 @@ Manuscrito en papel; 28x20,6cm.; escritura gótica del s. XV con rasgos de corte
 %
 {\mn} = \emph{Cancionero de Pero Guillén de Segovia} (BNE, MS/4114).
 %
-Manuscrito en papel; 21x15cm.; copia del s. XVIII de un manuscrito de fines del s. XV (Pérez Priego, 2017; Beltrán, 1991); 6 guardas (3 al inicio y 3 de cierre) y 731 fols.; los ff. 407r-418v contienen las coplas X-XL (acéfalo). <\url{https://bdh-rd.bne.es/viewer.vm?id=0000134993&page=1}>.\par
+Manuscrito en papel; 21x15cm.; copia del s. XVIII de un manuscrito de fines del s. XV (Pérez Priego, 2017; Beltrán, 1991); 6 guardas (3 al inicio y 3 de cierre) y 731 fols.; los ff. 407r-418v contienen las coplas X-XL (acéfalo). <\url{https://bdh-rd.bne.es/viewer.vm?id=0000134993\&page=1}>.\par
 %
 {\im} = \emph{Cancionero de fray Íñigo de Mendoza} (BNE, INC/897).
 %
-Impresión incunable a doble columna; tipografía gótica; Zamora, 1483?; 90 fols.; los ff. 67r-70r contienen las coplas con la rúbrica \comillas{Coplas que hizo do\emph{n} jorge manrriq\emph{ue} ala muerte del maestre de santiago do\emph{n} rodrigo manrique su padre}; existen dos ejemplares y se hallan uno, en la Biblioteca Nacional de España (INC/897), y otro, en la Real Biblioteca del Monasterio de San Lorenzo de El Escorial (38-I-22). <\url{https://bdh-rd.bne.es/viewer.vm?id=0000176297&page=1}>.\par
+Impresión incunable a doble columna; tipografía gótica; Zamora, 1483?; 90 fols.; los ff. 67r-70r contienen las coplas con la rúbrica \comillas{Coplas que hizo do\emph{n} jorge manrriq\emph{ue} ala muerte del maestre de santiago do\emph{n} rodrigo manrique su padre}; existen dos ejemplares y se hallan uno, en la Biblioteca Nacional de España (INC/897), y otro, en la Real Biblioteca del Monasterio de San Lorenzo de El Escorial (38-I-22). <\url{https://bdh-rd.bne.es/viewer.vm?id=0000176297\&page=1}>.\par
 \relax
 \vfill
 %
@@ -201,7 +203,7 @@ Constituyen al aparato crítico el orden y rúbricas en los testimonios, el apar
 \addcontentsline{toc}{section}{\emph{\textsc{Coplas}}}
 \beginnumbering
 \begin{center}
-		\textbf{[I]}\footnoteA{\textbf{[\textsc{Incipit}]} Coplas que fiço don jorje manrriq\emph{ue} sobre la muerte del maestre de santiago don rrodrigo manrriq\emph{ue} su padre {\eg}; Dezir de don jorge manrriq\emph{ue} por la muerte de su padre {\jm}; De don jorge manrique por la muerte de su padre {\rl}; Coplas de do\emph{n} jorge ma\emph{n}riq\emph{ue} a la muerte del maestre don rrod\emph{rig}o ma\emph{n}riq\emph{ue} su padre {\hh}; Coplas que hizo do\emph{n} jorge manrriq\emph{ue} ala muerte del maestre de santiago do\emph{n} rodrigo manrique su padre {\im}.}
+		\textbf{[I]}\footnoteA{\textbf{\textsc{Incipit} =} Coplas que fiço don jorje manrriq\emph{ue} sobre la muerte del maestre de santiago don rrodrigo manrriq\emph{ue} su padre {\eg}; Dezir de don jorge manrriq\emph{ue} por la muerte de su padre {\jm}; De don jorge manrique por la muerte de su padre {\rl}; Coplas de do\emph{n} jorge ma\emph{n}riq\emph{ue} a la muerte del maestre don rrod\emph{rig}o ma\emph{n}riq\emph{ue} su padre {\hh}; Coplas que hizo do\emph{n} jorge manrriq\emph{ue} ala muerte del maestre de santiago do\emph{n} rodrigo manrique su padre {\im}.}
 \end{center}
 \pstart
 \textsc{Recuerde}\footnoteE{\comillas{Recuerde} no tiene la acepción de \comillas{traer a la memoria}, sino la de \comillas{despertar} y, para ello, el \emph{Tesoro de la lengua castellana} de \textcite{Covarrubias1611} registra para el vocablo \emph{recordar} \comillas{despertar el que duerme, o boluer en acuerdo, del verbo recordor}. Posteriormente se registró el significado \comillas{Metaphoricamente vale despertar al que está dormido} (\emph{Autoridades}, 2ª acepción).} \textsc{el alma} dormida,\\
@@ -325,9 +327,7 @@ en conponer la cativa,\\
 dexándonos la señora\\
 desconpuesta!\par
 \pend
-\vfill
-\relax
-\newpage
+\repage
 %
 \begin{center}
 	\textbf{[VIII]}\footnoteA{\textbf{[VIII]} VII en \emph{86*JM}.}
@@ -418,6 +418,7 @@ y los torme\emph{n}tos de allá,\\
 que por ellos esperamos,\\
 eternales.\par
 \pend
+\repage
 %
 \begin{center}
 	\textbf{[XIII]}\footnoteA{\textbf{[XIII]} XII en {\jm}, {\rl}.}
@@ -442,7 +443,7 @@ no ay lugar.\par
 \end{center}
 \pstart
 Estos reyes poderosos\\
-que \edtext{vemos}{\lemma{veemos}\Afootnote{leemos {\jm}; vedes \emph{ε}}} por escrituras\\
+que \edtext{vemos}{\lemma{veemos}\Afootnote{leemos {\jm}; vedes {\etag}}} por escrituras\\
 ya pasadas,\\
 co\emph{n} \edtext{casos tristes}{\Afootnote{talos frjos {\rl}}}, llorosos,\\
 fuero\emph{n} sus buenas ve\emph{n}turas\\
@@ -463,7 +464,7 @@ Dexemos a los troyanos,\\
 que sus males no los vimos\\
 ni sus glorias;\\
 dexemos a los romanos,\\
-\edtext{aunque leemos y oímos}{\lemma{avn que leemos y oymos}\Afootnote{avn q\emph{ue} oymos y leemos {\delt}; aunque oymos y leimos \emph{ε}, {\im}}}\\
+\edtext{aunque leemos y oímos}{\lemma{avn que leemos y oymos}\Afootnote{avn q\emph{ue} oymos y leemos {\delt}; aunque oymos y leimos {\etag}, {\im}}}\\
 \edtext{sus estorias}{\Afootnote{sus victorias {\jm}, {\hh}, {\im}}}.\par
 No curemos de saber\\
 lo de aquel \edtext{siglo}{\Afootnote{tie\emph{m}po {\hh}}} pasado\\
@@ -505,8 +506,8 @@ de los fuegos ençe\emph{n}didos\\
 las músicas acordadas\\
 que tañían?\\
 ¿Qué se fizo aquel dançar,\\
-aquellas ropas \edtext{trepadas}{\Afootnote{japadas {\jm}; chapadas {\rl}, \emph{\textbf{ε}}, {\im}}}\\
-que \edtext{traían}{\lemma{trayan}\Afootnote{vestian \emph{ε}}}?\par
+aquellas ropas \edtext{trepadas}{\Afootnote{japadas {\jm}; chapadas {\rl}, {\etag}, {\im}}}\\
+que \edtext{traían}{\lemma{trayan}\Afootnote{vestian {\etag}}}?\par
 \pend
 %
 \begin{center}
@@ -598,9 +599,7 @@ y ensalçada;\\
 \edtext{que}{\Afootnote{quando {\rl}}} estando más ençe\emph{n}dida\\
 fue \edtext{amatada}{\Afootnote{matada {\jm}}}?\par
 \pend
-\relax
-\vfill
-\newpage
+\repage
 %
 \begin{center}
 	\textbf{[XXIII]}\footnoteA{\textbf{[XXIII]} XXXV en {\jm}.}
@@ -633,7 +632,7 @@ y barreras,\par
 la cava ho\emph{n}da, \edtext{chapada}{\Afootnote{japada {\jm}}},\\
 \edtext{y}{\Afootnote{o {\gamm}, {\im}}} qualquier otro reparo\\
 ¿qué aprovecha?\\
-\edtext{Q\emph{ua}ndo}{\lemma{q\emph{ua}ndo}\Afootnote{que si \emph{ε}, {\im}}} tú vienes irada,\\
+\edtext{Q\emph{ua}ndo}{\lemma{q\emph{ua}ndo}\Afootnote{que si {\etag}, {\im}}} tú vienes irada,\\
 todo lo \edtext{pasas}{\Afootnote{lleuas {\hh}}} \edtext{de claro}{\Afootnote{de claro en claro {\jm}}}\\
 co\emph{n} tu flecha.\par
 \pend
@@ -718,8 +717,8 @@ No dexó grandes thesoros\\
 ni \edtext{alcançó}{\lemma{alcanço}\Afootnote{llego {\hh}}} \edtext{gra\emph{n}des}{\Afootnote{muchas {\rl}}} riq\emph{ue}zas\\ 
 ni baxillas,\\
 mas fizo \edtext{guerras a moros}{\Afootnote{guerra a los moros {\delt}, {\mn}, {\im}; gran guerra a moros {\hh}}}\footnoteE{Se siguen las lecciones plurales de {\eg}, porque don Rodrigo Manrique probablemente no participó en una guerra, sino en otras más. Es necesario atender a los datos proporcionados por Fernando del Pulgar en su \emph{Claros varones de Castilla} (ca. 1480-1486) que, en un capítulo dedicado al maestre, el XIII, titulado «El Maestre Don Rodrigo Manrrique, Conde de Paredes» --que ya citó \textcite[cap. IX]{MenendezYPelayo1944}--, los recoge con gran detalle. A continuación, el pasaje según la edición crítica de Tate:\par
-«En las batallas ⁊ muchos recuentros que ovo con moros ⁊ con christianos este cavallero fue el que, mostrando grand esfuerço a los suyo, fería primero en los contrarios. E las gentes de su conpañía, visto el efuerço de su capitán, todos le seguían ⁊ cobravan osadía de pelear. Tenía tan grand conoscimiento de las cosas del canpo, ⁊ proveí[a]las en tal manera que donde él fue principal capitán nunca puso su gente en logar do se oviese de retraer, porque bolver las espaldas al enemigo era tan ageno que su ánimo que elegía antes de recebir la muerte peleando que salvar la vida huyendo.\par 
-»Este cavallero osó acometer grandes fazañas. Especialmente escaló una noche la cibdad de Huesca, que es del reino de Granada. E como quier que subiendo el escala los suyos fueron sentidos de los moros, ⁊ fueron algunos derribados del adarve ⁊ feridos en la subida [...] subieron el muro peleando ⁊ no fallescieron de sus fuerças defendiéndolo, aunque veían los unos derramar su sangre, los otros caer de la cerca. E de esta manera, matando de los moros ⁊ muriendo de los suyos, este capitán, ferido en el braço de una saeta, peleando entró la cibdad e retroxo los moros fasta que los cercó en la fortaleza. [...] Este cavallero duró ⁊ fizo durar a los suyos conbatiendo los moros que tenía cercados, e resistiendo a los moros que le tenía cercado por espacio de dos días, fasta que vino el socorro [...] Ganada aquella cibdad, dexado en ella por capitán a un su hermano llamado Gómes Manrrique, ganó otras fortalezas en la comarca. Socorrió muchas vezes algunas cibdades ⁊ villa ⁊ capitanes christianos en tienpo de estrema necesidad. ⁊ fizo tanta guerra en aquellas tierras que en el reino de Granada el nonbre de Rodrigo Ma[n]rrique fue mucho tienpo a los moros grand terror.»}\\
+«\emph{En las batallas ⁊ muchos recuentros que ovo con moros ⁊ con christianos este cavallero fue el que, mostrando grand esfuerço a los suyo, fería primero en los contrarios. E las gentes de su conpañía, visto el efuerço de su capitán, todos le seguían ⁊ cobravan osadía de pelear. Tenía tan grand conoscimiento de las cosas del canpo, ⁊ proveí[a]las en tal manera que donde él fue principal capitán nunca puso su gente en logar do se oviese de retraer, porque bolver las espaldas al enemigo era tan ageno que su ánimo que elegía antes de recebir la muerte peleando que salvar la vida huyendo.}\par 
+»\emph{Este cavallero osó acometer grandes fazañas. Especialmente escaló una noche la cibdad de Huesca, que es del reino de Granada. E como quier que subiendo el escala los suyos fueron sentidos de los moros, ⁊ fueron algunos derribados del adarve ⁊ feridos en la subida} [...] \emph{subieron el muro peleando ⁊ no fallescieron de sus fuerças defendiéndolo, aunque veían los unos derramar su sangre, los otros caer de la cerca. E de esta manera, matando de los moros ⁊ muriendo de los suyos, este capitán, ferido en el braço de una saeta, peleando entró la cibdad e retroxo los moros fasta que los cercó en la fortaleza.} [...] \emph{Este cavallero duró ⁊ fizo durar a los suyos conbatiendo los moros que tenía cercados, e resistiendo a los moros que le tenía cercado por espacio de dos días, fasta que vino el socorro }[...] \emph{Ganada aquella cibdad, dexado en ella por capitán a un su hermano llamado Gómes Manrrique, ganó otras fortalezas en la comarca. Socorrió muchas vezes algunas cibdades ⁊ villa ⁊ capitanes christianos en tienpo de estrema necesidad. ⁊ fizo tanta guerra en aquellas tierras que en el reino de Granada el nonbre de Rodrigo Ma[n]rrique fue mucho tienpo a los moros grand terror.}»}\\
 gana\emph{n}do sus fortalezas \edtext{}{\Afootnote[nosep]{fortalezas [y villas] \emph{eras.} {\eg}}}\\
 y sus villas;\par
 y en las lides que vençió,\\
@@ -740,7 +739,7 @@ Pues \edtext{por su}{\Afootnote{ensu {\jm}}} ho\emph{n}rra y estado,\\
 \edtext{con hermanos}{\Afootnote{con sus fijos {\eg}}} y criados\\
 se sostuvo.\par
 Después q\emph{ue} fechos famosos\\
-fizo \edtext{en estas dichas guerras}{\Afootnote{en la dicha guerra {\jm}; en esta misma guerra {\rl}; en esta dicha guerra \emph{ε}, {\im}}}\\
+fizo \edtext{en estas dichas guerras}{\Afootnote{en la dicha guerra {\jm}; en esta misma guerra {\rl}; en esta dicha guerra {\etag}, {\im}}}\\
 que fazía,\\
 fizo tratos ta\emph{n} ho\emph{n}rrosos\\
 que le diero\emph{n} \edtext{aún}{\lemma{avn}\Afootnote{muy {\im}}} más \edtext{t\emph{ie}rras}{\Afootnote{tierra {\gamm}, {\im}}}\\
@@ -928,9 +927,7 @@ y en su gloria;\\
 su memoria.\par
 \pend
 \endnumbering
-\vfill
-\relax
-\newpage
+\enpage
 %
 \section*{\textsc{Apéndice}}
 \addcontentsline{toc}{section}{\textsc{Apéndice}}
@@ -982,7 +979,6 @@ Coplas apócrifas o póstumas en la \emph{Glosa Famossisima} de Alonso de Cervan
 %
 \comillas{Aquí yaze muerto el ombre\\
 	que vivo queda su nombre}.\footnoteE{Beltrán, citando a Luis de Salazar y Castro, recupera «AQVI YACE MVERTO VN HOMBRE, QVE VIVO DEJO SV NOMBRE» \parencite[158]{Beltrán1991}.}
-\relax
-\vfill
+\enpage
 %
 \end{document}
